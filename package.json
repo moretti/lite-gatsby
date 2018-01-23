@@ -1,0 +1,29 @@
+{
+  "name": "lite-gatsby",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "loadable-components": "^0.4.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-helmet": "^5.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.0",
+    "react-snap": "^1.10.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "postbuild": "react-snap",
+    "test": "react-scripts test --env=jsdom",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject",
+    "serve": "http-server build"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.1.0",
+    "http-server": "^0.11.1"
+  },
+  "homepage": "https://moretti.github.io/lite-gatsby"
+}
