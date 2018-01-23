@@ -8,9 +8,12 @@ const Home = loadable(() => import('./pages/Home'));
 const About = loadable(() => import('./pages/About'));
 const NotFound = loadable(() => import('./pages/404'));
 
+const basename =
+  process.env.NODE_ENV === 'production' ? require('../package.json').name : '/';
+
 export default function AppRouter() {
   return (
-    <Router>
+    <Router basename={basename}>
       <div>
         <Nav />
         <Switch>
